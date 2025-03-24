@@ -1,0 +1,91 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Playfair+Display:wght@400;700;900&display=swap');
+
+/* Root Variables for Colors and Fonts */
+:root {
+    --primary-color: #FFBF69;
+    --secondary-color: #2EC4B6;
+    --text-color: black;
+    --heading-font: 'Lilita One', cursive;
+    --body-font: 'Playfair Display', serif;
+}
+
+/* Global Styles */
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    position: relative;
+}
+
+/* Remove underline from social media links */
+.footer a {
+    text-decoration: none;
+}
+
+/* Style the hero section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}
+
+/* Article Styling */
+.hero article {
+    position: absolute;
+    bottom: 40%;
+    left: 5%;
+    right: 5%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.hero article img {
+    float: right;
+    margin-left: 10px;
+    width: 20%;
+}
+
+/* Footer Styling */
+footer {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Style each social media link */
+.sociallinks a {
+    display: inline-block;
+    margin: 0 10px;  /* Spacing between icons */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Style social media icons */
+.sociallinks a img {
+    width: 40px; /* Adjust size */
+    height: auto;
+    border-radius: 50%; /* Make them circular */
+}
