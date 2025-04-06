@@ -157,12 +157,12 @@
   .history-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: -6rem;
+    gap: 2rem;
     align-items: center;
   }
   
   .left-column, .right-column {
-    padding: 10 10px;
+    padding: 0 10px;
   }
   
   .history-image {
