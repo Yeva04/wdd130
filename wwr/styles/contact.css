@@ -1,6 +1,3 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Playfair+Display:wght@400;700;900&display=swap');
-
 
 :root {
     --primary-color: #33658A;
@@ -145,6 +142,9 @@
         color: #03045e;
       }
       
+      section h3 {
+        margin-left: 50%;
+      }
       /* Contact Form */
       form {
         background-color: #dda43b;
@@ -152,7 +152,7 @@
         border-radius: 40px;
         border: 0px solid #0077b6;
         width: 50%;
-        position: center;
+        position: relative;
         margin-left: 10%;
       }
       
