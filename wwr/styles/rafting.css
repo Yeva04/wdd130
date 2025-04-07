@@ -606,3 +606,19 @@
     }
   }
   
+  .wireframe-link {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #f2f2f2;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-left: 30%;
+  }
+  
+  .wireframe-link:hover {
+    background-color: #ddd;
+  }
+  
