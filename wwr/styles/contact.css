@@ -1,0 +1,286 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Playfair+Display:wght@400;700;900&display=swap');
+
+
+:root {
+    --primary-color: #33658A;
+    --secondary-color: #F6AE2D;
+    --accent1-color: #f08903;
+    --accent2-color: #F26419;
+    --heading-font: 'Lilita One', sans-serif;
+    --paragraph-font: 'Playfair Display', serif;
+    --white: #FFFFFF;
+    --black: #333333;
+    --header-bg: #e6e0f3; /* Light purple background for header and footer */
+  }
+  
+  body {
+    font-family: var(--paragraph-font);
+    background: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: var(--black);
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+  }
+  
+  /* Header Styles - Using CSS Grid for layout */
+  header {
+    background-color: var(--header-bg);
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+   
+  }
+  
+  .header-container {
+    display: grid;
+    grid-template-columns: 150px 1fr 2fr;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    width: 80%;
+    max-width: 100px;
+    height: auto;
+    grid-column: 1;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    grid-column: 2;
+  }
+  
+  /* Navigation styles - Using CSS Flex for horizontal layout */
+  nav {
+    grid-column: 3;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex; /* Using flexbox for horizontal layout */
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 1;
+    text-align: center;
+    border: 1px solid var(--black);
+    margin: 0 5px;
+  }
+  
+  nav a {
+    display: block;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 700;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: var(--accent1-color);
+    color: var(--white);
+  }
+    /* General layout */
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      
+    /* Section spacing */
+    section {
+        margin-bottom: 40px;
+      }
+      
+      /* Contact Info */
+      section p {
+        margin: 5px 0;
+        font-size: 1rem;
+      }
+      
+      iframe {
+        width: 100%;
+        height: 300px;
+        border: 2px solid #0077b6;
+        margin-top: 10px;
+      }
+      
+    
+      /* Employee section layout */
+    section:nth-of-type(2) {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+    
+      /* Employee Profiles */
+      figure {
+        text-align: center;
+        width: 200px;
+      }
+      
+      section figure img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      }
+      
+      section figure figcaption {
+        margin-top: 5px;
+        font-weight: bold;
+        color: #03045e;
+      }
+      
+      /* Contact Form */
+      form {
+        background-color: #dda43b;
+        padding: 20px;
+        border-radius: 40px;
+        border: 0px solid #0077b6;
+        width: 50%;
+        position: center;
+        margin-left: 10%;
+      }
+      
+
+      .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+      }
+
+      form label {
+        text-align: center;
+        display: block;
+        width: 100%;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: black;
+      }
+      
+      .form-group {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+
+      form input[type="text"],
+      form input[type="email"],
+      form textarea {
+        width: 50%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #90e0ef;
+        font-size: 1rem;
+        margin-top: 5px;
+      }
+      
+      form textarea {
+        resize: vertical;
+      }
+      
+      form input[type="radio"],
+      form input[type="checkbox"] {
+        margin-right: 8px;
+      }
+      
+      form button {
+        background-color: #0077b6;
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      form button:hover {
+        background-color: #023e8a;
+      }
+      
+    
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    
+    button[type="submit"] {
+      background-color: #0055a5;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    button[type="submit"]:hover {
+      background-color: #003f7d;
+    }
+    
+    @media screen and (max-width: 600px) {
+      
+        footer {
+          flex-direction: column;
+          text-align: center;
+        }
+        
+        .social-container {
+          margin-top: 1rem;
+          justify-content: center;
+        }
+      }
+      
+    
+      /* Footer - Styling as shown in wireframe */
+  footer {
+    background-color: var(--header-bg);
+    color: var(--black);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-content {
+    flex: 3;
+  }
+  
+  .social-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    flex: 1;
+  }
+  
+  .social-container a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--white);
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .social-container img {
+    width: 25px;
+    height: 25px;
+  }
+    
