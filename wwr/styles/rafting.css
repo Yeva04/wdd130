@@ -92,6 +92,151 @@
     color: var(--white);
   }
   
+
+
+    /* General layout */
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      
+    /* Section spacing */
+    section {
+        margin-bottom: 40px;
+      }
+      
+      /* Contact Info */
+      section p {
+        margin: 5px 0;
+        font-size: 1rem;
+      }
+      
+      iframe{
+        margin-top: 1rem;
+        border: none; /* No inline styles */
+        width: 100%;
+      }
+    
+      /* Employee section layout */
+    section:nth-of-type(2) {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+    
+      /* Employee Profiles */
+      figure {
+        text-align: center;
+        width: 200px;
+      }
+      
+      section figure img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      }
+      
+      section figure figcaption {
+        margin-top: 5px;
+        font-weight: bold;
+        color: #03045e;
+      }
+      
+      section h3 {
+        margin-left: 50%;
+      }
+      /* Contact Form */
+      form {
+        background-color: #dda43b;
+        padding: 20px;
+        border-radius: 40px;
+        border: 0px solid #0077b6;
+        width: 50%;
+        position: relative;
+        margin-left: 10%;
+      }
+      
+
+      .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+      }
+
+      form label {
+        text-align: center;
+        display: block;
+        width: 100%;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: black;
+      }
+      
+      .form-group {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+
+      form input[type="text"],
+      form input[type="email"],
+      form textarea {
+        width: 50%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #90e0ef;
+        font-size: 1rem;
+        margin-top: 5px;
+      }
+      
+      form textarea {
+        resize: vertical;
+      }
+      
+      form input[type="radio"],
+      form input[type="checkbox"] {
+        margin-right: 8px;
+      }
+      
+      form button {
+        background-color: #0077b6;
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      form button:hover {
+        background-color: #023e8a;
+      }
+      
+    
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    
+    button[type="submit"] {
+      background-color: #0055a5;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    button[type="submit"]:hover {
+      background-color: #003f7d;
+    }
+
+
   /* Hero Section */
   .hero {
     position: relative;
